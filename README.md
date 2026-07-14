@@ -27,9 +27,10 @@ My work normally spans the full delivery chain:
 5. verify behavior at the actual system boundary;
 6. explain, defend, and hand over the result to customers and engineering teams.
 
-I have been developing software professionally since 2017, have led a
-five-person client team while remaining hands-on, and currently build AI, cloud,
-backend, integration, and automation systems at Cluster Dynamics Reply.
+I have been developing software professionally since 2017. In one client
+engagement, I led the AI workstream as technical expert, coordinating and
+enabling five contributors while remaining hands-on. I currently build AI,
+cloud, backend, integration, and automation systems at Cluster Dynamics Reply.
 
 My differentiator is **Agentic Engineering**: I design the operating system
 around coding agents as carefully as the software they help build. Work is
