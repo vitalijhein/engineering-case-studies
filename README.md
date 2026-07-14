@@ -119,6 +119,8 @@ I also won the Microsoft AI Challenge 2025 with a self-correcting email workflow
 that generates an answer, validates it against declarative compliance rules,
 and repairs or escalates failed output.
 
+[Read the celebration post](https://www.linkedin.com/feed/update/urn:li:activity:7343598439819018241)
+
 ## About these case studies
 
 The case studies are intentionally technical and text-heavy. They explain the
