@@ -116,9 +116,9 @@ Stacking, improving Micro-F1 from a 0.54 baseline to 0.78.
 
 [Read the published thesis](https://repositum.tuwien.at/handle/20.500.12708/188206)
 
-I also won the Microsoft AI Challenge 2025 with a self-correcting email workflow
-that generates an answer, validates it against declarative compliance rules,
-and repairs or escalates failed output.
+I was part of the team that won the Microsoft AI Challenge 2025 with a
+self-correcting email workflow that generates an answer, validates it against
+declarative compliance rules, and repairs or escalates failed output.
 
 [Read the celebration post](https://www.linkedin.com/feed/update/urn:li:activity:7343598439819018241)
 
