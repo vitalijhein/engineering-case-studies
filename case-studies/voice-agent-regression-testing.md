@@ -12,11 +12,13 @@
 
 ## Executive summary
 
-The client team had a practical testing problem. After changes to a voice bot,
-employees called it manually, spent several hours working through 15 to 20
-examples, and often finished with little more than “something does not work.”
-The tests were not reproducible, coverage was unclear, and a failed
-conversation rarely revealed the exact turn or technical reason.
+The client team already maintained a structured Excel test catalog. After
+changes to a voice bot, testers spent several hours executing 15 to 20 cases by
+phone and returned documented steps, expectations, and observations. The
+process was disciplined, but the resulting spreadsheet was not an executable
+replay for the development team. It could describe a failed conversation
+without preserving the exact spoken interaction, channel timing, captured
+turn evidence, or runtime state needed to reproduce its technical cause.
 
 I designed and implemented a framework that treats the voice bot like software:
 it reads an exported Copilot Studio solution, reconstructs the conversation
@@ -86,8 +88,8 @@ official schema became an additional validation source rather than the starting
 point for the implementation.
 
 On one imported bot, the scanner enumerated **267 distinct dialog paths**. That
-made the gap immediately visible: manual spot checks could never provide a
-repeatable regression strategy for the full conversation graph.
+made the gap immediately visible: a manually executed subset could not provide
+a repeatable regression strategy for the full conversation graph.
 
 ### 2. Generate conversations without inventing proof
 
@@ -250,12 +252,12 @@ disconnect without text proof.
 
 ## Outcome
 
-The initial working system replaced hours of shallow manual calls with a
-repeatable process that identifies the exact conversation turn, expected
-behavior, actual evidence, and reason for drift or failure. It can derive broad
-structural coverage, execute proven scenarios on the real phone channel, and
-preserve artifacts that another engineer can inspect instead of asking the
-tester to remember what happened.
+The initial working system turned the client's structured manual test catalog
+into a repeatable execution layer that identifies the exact conversation turn,
+expected behavior, actual evidence, and reason for drift or failure. It did not
+replace the test knowledge captured by the customer team. It made those
+scenarios executable on the real phone channel and preserved artifacts that
+developers could inspect and replay when diagnosing a result.
 
 The enduring result is the decision system around the calls: explicit proof
 levels, bounded live execution, evidence-aware verdicts, and a harness that can
