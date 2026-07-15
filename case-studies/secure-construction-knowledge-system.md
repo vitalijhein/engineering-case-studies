@@ -171,9 +171,10 @@ The SharePoint indexer accepts PDF, Word, Excel, and PowerPoint documents. A
 text-splitting skill breaks extracted content into overlapping chunks, a custom
 merge skill preserves useful chunk position information, an Azure OpenAI skill
 generates embeddings, and index projections write the enriched chunks into the
-project index. The indexer runs immediately when it is created and continues on
-its configured recurring schedule. Installation discovery and index readiness
-are checked every 15 minutes, independently of that document-sync schedule.
+project index. The indexer runs immediately when it is created and, in the
+production configuration, synchronizes the project documents every 15 minutes.
+Installation discovery and index readiness are also checked every 15 minutes,
+but remain independent processes.
 
 Separating these clocks matters. A search request should not need to know how a
 Team was discovered, and the agent should not need to be redeployed when the
