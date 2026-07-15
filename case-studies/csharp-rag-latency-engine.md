@@ -260,6 +260,11 @@ while the engine selects the FAQ that answers the stated payment-status
 question. The remaining five of the 29 reviewed rows are content gaps because
 the required FAQ does not exist in the index.
 
+This is not a holdout-accuracy claim. The 29-row fixture is the only available
+business-reviewed labeled set and was also used while tuning the bounded
+selection mechanisms. It shows how the current configuration behaves on that
+known set; broader generalization requires more labeled examples.
+
 Free-form generation is evaluated differently from deterministic source
 selection. A fixed seed makes selector replay reproducible, but answer wording
 can still vary at temperature zero. Answer changes are therefore measured in
