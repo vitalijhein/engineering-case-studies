@@ -87,9 +87,10 @@ extension and extracted **51 action kinds and 28 trigger kinds**. The later
 official schema became an additional validation source rather than the starting
 point for the implementation.
 
-On one imported bot, the scanner enumerated **267 distinct dialog paths**. That
-made the gap immediately visible: a manually executed subset could not provide
-a repeatable regression strategy for the full conversation graph.
+On one eight-topic reference bot, the scanner enumerated **267 distinct dialog
+paths**. That made the scale difference immediately visible: a carefully
+documented manual suite and exhaustive graph regression solve different testing
+problems.
 
 ### 2. Generate conversations without inventing proof
 
